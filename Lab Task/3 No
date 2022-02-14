@@ -1,0 +1,266 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace task1
+{
+
+    class Student
+    {
+        private string Name = "Nabil";
+
+
+        public string name
+        {
+            get
+            {
+                return this.Name;
+            }
+            set
+            {
+                this.name = value;
+            }
+        }
+        private string Id = "20-42095-1";
+
+        public string id
+        {
+            get
+            {
+                return this.Id;
+            }
+            set
+            {
+                this.id = value;
+            }
+        }
+        private string Department = "CSE";
+
+        public string department
+        {
+            get
+            {
+                return this.Department;
+            }
+            set
+            {
+                this.department = value;
+            }
+        }
+        private double Cgpa = 3.30;
+
+        public double cgpa
+        {
+
+            get
+            {
+                return this.Cgpa;
+            }
+            set
+            {
+                this.cgpa = value;
+            }
+        }
+
+        public void showInfo()
+        {
+            Console.WriteLine(name);
+            Console.WriteLine(id);
+            Console.WriteLine(department);
+        }
+    }
+
+
+    public class Triangle
+    {
+        private int x = 60;
+        public int X
+        {
+            get
+            {
+                return this.x;
+            }
+            set
+            {
+                this.X = value;
+            }
+        }
+
+        private int y = 60;
+        public int Y
+        {
+            get
+            {
+                return this.y;
+            }
+            set
+            {
+                this.Y = value;
+            }
+        }
+        private int z = 60;
+        public int Z
+        {
+            get
+            {
+                return this.z;
+            }
+            set
+            {
+                this.Z = value;
+            }
+        }
+
+        public void showInfo()
+        {
+
+            int RealTriangle = x + y + z;
+
+
+
+            if (RealTriangle == 180)
+            {
+                Console.Write("THIS IS A VALID TRIANGLE.\n");
+            }
+            else
+            {
+                Console.Write("THIS IS NOT A VLAID TRIANGLE.\n");
+            }
+        }
+
+    }
+
+    public class account
+    {
+        private string acc_name = "Nabil";
+        public string ac
+        {
+            get
+            {
+                return this.acc_name;
+            }
+            set
+            {
+                this.ac = value;
+            }
+        }
+        private string acc_id = "1";
+        public string acid
+        {
+            get
+            {
+                return this.acc_id;
+            }
+            set
+            {
+                this.acid = value;
+            }
+        }
+        private int balance = 500;
+        public int bn
+        {
+            get
+            {
+                return this.balance;
+            }
+            set
+            {
+                this.bn = value;
+            }
+        }
+
+
+        public void deposit()
+        {
+            Console.Write("Deposit ");
+
+            Console.WriteLine(bn);
+        }
+
+
+        public class Course
+        {
+            private string courseName = "C Sharp";
+            public string cn
+            {
+                get
+                {
+                    return this.courseName;
+                }
+                set
+                {
+                    this.cn = value;
+                }
+            }
+            private string coursecode = "15";
+            public string cc
+            {
+                get
+                {
+                    return this.coursecode;
+                }
+                set
+                {
+                    this.cc = value;
+                }
+            }
+            private int coursecredit = 150;
+
+            public int c_cre
+            {
+                get
+                {
+                    return this.coursecredit;
+                }
+                set
+                {
+                    this.c_cre = value;
+                }
+            }
+
+
+            public void showCourseInfo()
+            {
+
+                Console.WriteLine("Course name" + cn);
+                Console.WriteLine("Course Credit" + c_cre);
+                Console.WriteLine("Course Code" + cc);
+            }
+
+        }
+    }
+
+
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Student student = new Student();
+
+            student.showInfo();
+
+            Triangle triangle = new Triangle();
+
+            triangle.showInfo();
+
+
+
+
+
+            account ac = new account();
+
+            ac.deposit();
+
+
+
+
+        }
+    }
+}
+
+
